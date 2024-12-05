@@ -80,7 +80,7 @@ static const __u8 lenovo_pro_dock_need_fixup_collection[] = {
 	0x2a, 0xff, 0xff,	/*  Usage Maximum (65535)		*/
 };
 
-static __u8 *lenovo_report_fixup(struct hid_device *hdev, __u8 *rdesc,
+static const __u8 *lenovo_report_fixup(struct hid_device *hdev, __u8 *rdesc,
 		unsigned int *rsize)
 {
 	switch (hdev->product) {
